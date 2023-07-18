@@ -1,83 +1,71 @@
 *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     line-height: 1.5;
 }
 
 body{
-    font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: antiquewhite;
 }
 
-nav{
-    text-align: left;
-    margin: 0;
-    padding: 0;
-
-}
-
-a{
-    color: lightcoral;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 10px;
-}
-
-nav .links{
-   
-    text-decoration: none;
-}
-
-
 img{
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     width: 400px;
-    height: auto;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
+    border: 5px solid lightcoral;
+    border-radius: 10px;
 }
-
 ul{
     list-style: none;
 }
 
-h1{
-    color: rgb(162, 20, 20);
-    text-align: center;
-    font-size: 30px;
-}
-.preparation{
-    display: grid;
-    margin: auto;
-    padding: auto;
-    text-align: left;
-}
-.preparation .prep{
-    
-    margin: auto;
-    padding: 10px;
-    border-bottom: 3px solid lightcoral;
-    text-align: center;
-    width: 30%;
+h2{
+    color: rgb(151, 63, 28);
 }
 
-.content-ingredients,
-.content-steps{
-    margin: auto;
-    width: 30%;
+.recipe-card.feature{
+    border-radius: 10px;
+    background-color: lightyellow;
 }
-.recipe-list{
-    text-align: center;
+
+.recipe-card{
+    width: 1000px;
+    margin: 20px auto;  /* Centrar elemento*/
+    box-shadow: 1px 1px 4px rgba(0,0,0,.5);
 }
-.recipe-list li{
+
+.recipe-content{
+    display: inline-block; /*em linha com a imagem do elemento*/
+    padding: 10px;
+    vertical-align: top;
+    width: 590px;
+    overflow: auto;
+}
+.recipe-card h2,.recipe-card a{
+    text-transform: uppercase;
+}
+ul li{
     display: inline-block;
-    text-align: center;
+    margin-right: 10px;
 }
-.preview-img{
-    display: block;
-    width: auto;
-    height: 300px;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
+ul li h3{
+    font-size: 15px;
+}
+
+h3,a{
+    text-transform: uppercase;
+}
+.view-recipe{
+    margin: 15px auto;
+    background-color: lightcoral;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+}
+.view-recipe a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }
